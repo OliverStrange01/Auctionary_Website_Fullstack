@@ -1,0 +1,53 @@
+/* =========================
+   Privacy policy
+========================= */
+
+.privacy-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #222;
+}
+
+.privacy-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.privacy-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.privacy-section {
+  margin-bottom: 1.5rem;
+}
+
+.privacy-section h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.privacy-section p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.privacy-section ul {
+  padding-left: 1.2rem;
+}
+
+.privacy-section li {
+  margin-bottom: 0.4rem;
+}
+
+a {
+  color: #ffd700;
+  text-decoration: underline;
+}

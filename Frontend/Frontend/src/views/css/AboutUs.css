@@ -1,0 +1,51 @@
+/* =========================
+   About us page
+========================= */
+
+.about-us-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: sans-serif;
+  color: #222;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #555;
+}
+
+.about-content .about-section {
+  margin-bottom: 2rem;
+}
+
+.about-content h2 {
+  font-size: 1.5rem;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+.about-content p, 
+.about-content ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-content ul {
+  padding-left: 1.2rem;
+}
+
+.about-content a {
+  color: #000;
+  text-decoration: underline;
+}

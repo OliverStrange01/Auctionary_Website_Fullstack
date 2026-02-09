@@ -1,0 +1,119 @@
+/* =========================
+   My bids
+========================= */
+
+.my-bids {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.my-bids h1 {
+  font-family: "Georgia", serif;
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2a1e16;
+}
+
+.my-bids p {
+  text-align: center;
+  color: #6b5e4a;
+  font-size: 1.05rem;
+}
+
+.my-bids ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bid-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #f9efd9;
+  border: 1px solid #d6c2a0;
+  border-left: 6px solid #5b2e1f;
+
+  border-radius: 12px;
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 1rem;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s ease, border-left-color 0.2s ease;
+}
+
+.bid-item:hover {
+  background: #f3e6cf;
+  border-left-color: #8b4a2f;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item-info strong {
+  font-family: "Georgia", serif;
+  font-size: 1.15rem;
+  color: #2a1e16;
+}
+
+.status {
+  padding: 0.3rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid transparent;
+}
+
+.status.live {
+  background-color: #dcfce7;
+  color: #166534;
+  border-color: #22c55e;
+}
+
+.status.won {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border-color: #10b981;
+}
+
+.status.outbid {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border-color: #ef4444;
+}
+
+.bid-item button {
+  padding: 0.55rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  background-color: #5b2e1f;
+  color: #fff;
+
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.bid-item button:hover {
+  background-color: #442017;
+  transform: translateY(-1px);
+}
+
+.empty {
+  margin-top: 3rem;
+  font-size: 1.05rem;
+  color: #6b5e4a;
+  text-align: center;
+}

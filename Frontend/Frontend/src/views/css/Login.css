@@ -1,0 +1,150 @@
+/* =========================
+   Login
+========================= */
+
+.login-container {
+  max-width: 420px;
+  margin: 4rem auto;
+  padding: 2.5rem 2.2rem;
+
+  background: #f9efd9;
+  border-radius: 16px;
+  border: 1px solid #d6c2a0;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2a1e16;
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  font-family: "Georgia", serif;
+  font-size: 2rem;
+  color: #2a1e16;
+}
+
+label {
+  display: block;
+  margin-top: 1.1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #3a1f14;
+}
+
+input {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  margin-top: 0.4rem;
+
+  border-radius: 10px;
+  border: 1px solid #c8b394;
+  background: #ffffff;
+
+  font-size: 1rem;
+  color: #1f2937;
+
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus {
+  outline: none;
+  border-color: #5b2e1f;
+  box-shadow: 0 0 0 3px rgba(91, 46, 31, 0.25);
+}
+
+.input-error {
+  border-color: #b91c1c;
+}
+
+.error {
+  color: #991b1b;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 3.5rem;
+}
+
+.password-wrapper .toggle {
+  position: absolute;
+  right: 0.5rem;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  color: #5b2e1f;
+  font-weight: 600;
+  font-size: 0.85rem;
+
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+
+  transition: background-color 0.2s;
+}
+
+.password-wrapper .toggle:hover {
+  background-color: rgba(91, 46, 31, 0.12);
+}
+
+button[type="submit"] {
+  width: 100%;
+  margin-top: 1.8rem;
+
+  padding: 0.65rem 0;
+  border-radius: 10px;
+  border: none;
+
+  background-color: #5b2e1f;
+  color: #ffffff;
+
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #442017;
+  transform: translateY(-1px);
+}
+
+p {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  color: #6b5e4a;
+  text-align: center;
+}
+
+p a {
+  color: #5b2e1f;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+p a:hover {
+  color: #8b4a2f;
+}
+
+@media (max-width: 450px) {
+  .login-container {
+    padding: 2rem 1.5rem;
+    margin: 2.5rem 1rem;
+  }
+}

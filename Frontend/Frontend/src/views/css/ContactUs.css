@@ -1,0 +1,54 @@
+/* =========================
+   Contact us page
+========================= */
+
+.contact-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: sans-serif;
+  color: #222;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #555;
+}
+
+.contact-content {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.contact-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contact-card h2 {
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.contact-card a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.contact-card p {
+  margin: 0;
+  font-size: 1rem;
+}

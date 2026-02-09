@@ -1,0 +1,90 @@
+/* =========================
+   Sold items
+========================= */
+
+.sold-items {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.sold-items h1 {
+  font-family: "Georgia", serif;
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+  color: #2a1e16;
+  text-align: center;
+}
+
+.sold-items p {
+  color: #6b5e4a;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.sold-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sold-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #f9efd9;
+  border: 1px solid #d6c2a0;
+  border-left: 6px solid #5b2e1f;
+
+  border-radius: 12px;
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 1rem;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s ease, border-left-color 0.2s ease;
+}
+
+.sold-item:hover {
+  background: #f3e6cf;
+  border-left-color: #8b4a2f;
+}
+
+.sold-item strong {
+  font-family: "Georgia", serif;
+  font-size: 1.15rem;
+  color: #2a1e16;
+}
+
+.sold-item p {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  color: #065f46;
+  font-weight: 600;
+}
+
+.sold-item button {
+  background-color: #5b2e1f;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.sold-item button:hover {
+  background-color: #442017;
+  transform: translateY(-1px);
+}
+
+.empty {
+  text-align: center;
+  margin-top: 3rem;
+  color: #6b5e4a;
+  font-size: 1.05rem;
+}

@@ -1,0 +1,166 @@
+/* =========================
+   App / Navbar
+========================= */
+
+.app-container {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f6deb8;
+  color: #111827;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #f6deb8; 
+  border-bottom: 5px solid #5b2e1f;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0.75rem 1rem 0.9rem;
+}
+
+.nav-brand img {
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #5b2e1f;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+  transition: background-color 0.2s, color website 0.2s;
+}
+
+.nav-link:hover {
+  background-color: rgba(91, 46, 31, 0.12);
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.logout-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: beige;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  background: lightblue;
+  color: black;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.cookie-banner p {
+  margin: 0;
+  margin-right: 0.5rem;
+  line-height: 1.3;
+  color: #000;
+}
+
+.cookie-banner a {
+  color: #000; 
+  text-decoration: underline;
+}
+
+.cookie-button {
+  background: #f6deb8;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.cookie-button:hover {
+  background: #e6c200; 
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.cancel {
+  background: #e5e7eb;
+}
+
+button:not(.cancel) {
+  background: #ef4444;
+  color: #fff;
+}
+
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .navbar .nav-link {
+    margin: 0.5rem;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+}

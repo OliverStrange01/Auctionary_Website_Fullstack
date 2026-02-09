@@ -1,0 +1,92 @@
+/* =========================
+   Items won
+========================= */
+
+.won-bids {
+  max-width: 760px;
+  margin: 100px auto;
+  padding: 0 16px;
+  color: #2a1e16;
+}
+
+.won-bids h1 {
+  font-family: "Georgia", serif;
+  font-size: 2.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.won-item h3 {
+  font-family: "Georgia", serif;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.won-item {
+  display: grid;
+  grid-template-columns: 1fr 120px auto;
+  align-items: center;
+  gap: 1.5rem;
+
+  padding: 20px 22px;
+  margin-bottom: 14px;
+
+  background: #f9efd9;
+  border: 1px solid #d6c2a0;
+  border-left: 5px solid #5b2e1f;
+  border-radius: 6px;
+}
+
+.won-item .price {
+  text-align: right;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: green;
+  white-space: nowrap;
+}
+
+.won-item button {
+  align-self: center;
+  padding: 8px 14px;
+
+  font-size: 0.9rem;
+  font-family: "Georgia", serif;
+
+  background: transparent;
+  border: 1px solid #8b4a2f;
+  color: #5b2e1f;
+  border-radius: 6px;
+
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.won-item button:hover {
+  background: #8b4a2f;
+  color: #ffffff;
+}
+
+.empty {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #6b5b4a;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .won-item {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .won-item .price {
+    text-align: left;
+    margin-top: 6px;
+  }
+
+  .won-item button {
+    margin-top: 10px;
+    justify-self: start;
+  }
+}
